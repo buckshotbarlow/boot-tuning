@@ -73,4 +73,7 @@ main() {
   echo "Done. Reboot, then run: systemd-analyze critical-chain"
 }
 
+echo "Setting up configuration for current system"
+sudo dmidecode -s system-product-name
+
 main "$@"
